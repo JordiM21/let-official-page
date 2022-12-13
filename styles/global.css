@@ -1,0 +1,440 @@
+:root {
+	--color1: rgb(20, 15, 45);
+	--color2: rgb(0, 145, 173);
+	--color3: rgb(245, 138, 7);
+	--color4: rgb(215, 38, 56);
+	--color-texto-dark: rgb(18, 18, 18);
+	--color-texto-white: rgb(255, 244, 228);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+	color: var(--color1);
+}
+i {
+	color: var(--color2);
+}
+
+/* <--- Section 1 ---> */
+
+.section1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+}
+.section1 h1 {
+	font-size: 4.3rem;
+	font-weight: 900;
+}
+
+.section1 span {
+	color: var(--color3);
+}
+.sectionForm button {
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-top: 30px;
+	background-color: var(--color3);
+	color: var(--color-texto-white);
+	border: 0;
+	padding: 15px;
+	border-radius: 5px;
+	width: 100%;
+	transition: 0.3s;
+}
+.sectionForm span {
+	color: var(--color2);
+}
+.sectionForm button:hover {
+	background-color: rgb(221, 122, 2);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.49);
+	letter-spacing: 0.6px;
+	transform: scale(1.02);
+}
+
+/* <-----Section 2 -----> */
+
+.section2 {
+	max-width: 400px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section2 h2 {
+	color: var(--color2);
+	margin-bottom: 10px;
+	font-size: 2rem;
+}
+.section2 button {
+	width: 100%;
+	height: 40px;
+	background-color: var(--color2);
+	border: none;
+	color: white;
+	font-weight: 800;
+	letter-spacing: 1px;
+	font-size: 1.04rem;
+	transition: 0.2s ease-in;
+	border-radius: 0 0 5px 5px;
+}
+.section2 button:hover {
+	cursor: pointer;
+	padding-right: 10px;
+}
+.section2 button:hover .next {
+	right: 20px;
+	font-size: 1.5rem;
+}
+.section2 .i {
+	color: var(--color2);
+	margin-left: 10px;
+}
+.section2 .next {
+	font-size: 1.3rem;
+	position: absolute;
+	right: 30px;
+	transition: 0.2s ease-in;
+}
+
+/* <---Section 3 ----> */
+
+.section3 {
+	max-width: 400px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section3 h2 {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	margin: 20px 10px;
+}
+.section3 p {
+	font-size: 1.2rem;
+	text-align: center;
+	font-weight: 600;
+	margin: 20px 10px;
+}
+.section3 span {
+	color: var(--color3);
+}
+
+/* <----Section 4 ----> */
+
+.section4 {
+	background-color: var(--color3);
+	width: 95%;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+.section4b {
+	background-color: var(--color3);
+	width: 95%;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+.section4 .cta {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	gap: 10px;
+}
+.section4b .cta {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	gap: 10px;
+}
+
+.section4 .cta h2 {
+	font-size: 2rem;
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+
+.section4b .cta h2 {
+	font-size: 2rem;
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+
+.section4 .cta h2 span {
+	color: yellow;
+}
+
+.section4b .cta h2 span {
+	color: yellow;
+}
+
+.section4 .cta a {
+	text-decoration: none;
+	background-color: white;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	color: var(--color2);
+	display: flex;
+	justify-content: space-evenly;
+	gap: 80px;
+	padding: 15px;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+.section4b .cta a {
+	text-decoration: none;
+	background-color: white;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	color: var(--color2);
+	display: flex;
+	justify-content: space-evenly;
+	gap: 80px;
+	padding: 15px;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+
+.section4 .cta a:hover {
+	gap: 100px;
+	box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.298);
+}
+.section4b .cta a:hover {
+	gap: 100px;
+	box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.298);
+}
+.section4 .cta .i {
+	font-size: 1.5rem;
+}
+.section4b .cta .i {
+	font-size: 1.5rem;
+}
+
+/* <--- Section 5 ---> */
+
+.section5 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section5 i {
+	font-size: 1rem;
+	margin: 0 2px;
+}
+.section5 .Image {
+	max-width: 350px;
+	max-height: 350px;
+}
+
+/* <--- Section 6 ---> */
+
+.section6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section6 .Image {
+	max-width: 400px;
+	max-height: 400px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+.section6 div {
+	width: 380px;
+	margin: 10px auto;
+}
+
+.section6 div h3 {
+	color: var(--color2);
+	margin: 10px auto;
+	font-size: 1.5rem;
+	margin-top: 30px;
+}
+
+.section6 div p {
+	font-size: 1.2rem;
+}
+
+/* <--- Section 7 ---> */
+
+.section7 {
+	max-width: 800px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+.section7 h2 {
+	font-size: 1.6rem;
+	text-align: center;
+	max-width: 80%;
+}
+.section7 h2 span {
+	color: var(--color3);
+}
+.section7 p {
+	margin: 20px auto;
+	font-size: 1.2rem;
+}
+.section7 .i,
+.section7 .check {
+	font-size: 2rem;
+	position: relative;
+	bottom: -8px;
+	margin-right: 8px;
+	transition: 0.3s ease-in;
+	color: var(--color2);
+	border-radius: 50%;
+}
+
+.section7 p:hover {
+	text-decoration: underline 2px;
+	text-decoration-color: var(--color2);
+	cursor: pointer;
+}
+.section7 p:hover .i {
+	transform: rotate(-90deg);
+	background-color: var(--color2);
+	color: white;
+}
+.section7 .check {
+	color: rgb(12, 212, 12);
+}
+
+.section7 p:hover .check {
+	background-color: rgb(12, 212, 12);
+	color: white;
+}
+
+/* <--- Form ---> */
+
+.sectionForm {
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 1px 20px 0.5px rgba(5, 63, 222, 0.234);
+	border-radius: 20px;
+	padding: 20px;
+	width: 320px;
+}
+.sectionForm h2 {
+	text-align: center;
+}
+.sectionForm div {
+	width: 300px;
+}
+
+/* <--- Info - Content ---> */
+
+.info-content {
+	max-width: 400px;
+	margin: 10px auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.info-content .infoCard {
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.info-content .Image {
+	max-width: 80px;
+}
+.info-content h2 {
+	font-size: 1.8rem;
+}
+.info-content a,
+span {
+	color: var(--color3);
+}
+.info-content a:hover {
+	color: purple;
+}
+
+/* <--- Responisve Large Screen ---> */
+
+@media only screen and (min-width: 1000px) {
+	.big-screen {
+		display: flex;
+		flex-direction: row;
+		margin: 0 100px;
+	}
+	.big-screen .section1 h1 {
+		font-size: 6rem;
+	}
+	.big-screen .sectionForm {
+		width: 350px;
+		box-shadow: 1px 1px 20px 0.5px rgba(5, 63, 222, 0.234);
+		border-radius: 20px;
+		padding: 20px;
+		min-width: 300px;
+	}
+	.big-screen .sectionForm div {
+		width: 100%;
+	}
+
+	.section2 {
+		min-width: 800px;
+	}
+
+	.section3 {
+		min-width: 700px;
+	}
+	.section4,
+	.section4b {
+		max-width: 700px;
+	}
+	.section5 {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.section5 div {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 20px;
+	}
+
+	.section6 div {
+		min-width: 600px;
+	}
+
+	.section6 .Image {
+		min-width: 600px;
+		min-height: 600px;
+	}
+}
